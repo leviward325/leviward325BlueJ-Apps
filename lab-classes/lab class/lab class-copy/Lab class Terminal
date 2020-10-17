@@ -1,0 +1,11 @@
+LabClass co452Lab = new LabClass(3);
+Student student1 = new Student("kevin", "2424652");
+Student student2 = new Student("david", "3y354353");
+Student student3 = new Student("steve", "76454333");
+co452Lab.setTime("Tesday 29th September 2020" );
+co452Lab.setRoom("G100");
+co452Lab.setInstructor("Nicholas day");
+student1.addCredits(20);
+student2.addCredits(20);
+student3.addCredits(20);
+student1.changeName("josh");
