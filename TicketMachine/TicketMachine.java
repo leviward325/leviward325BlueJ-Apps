@@ -14,7 +14,12 @@
 public class TicketMachine
 {
     // The price of a ticket from this machine.
-    private int price;
+    public static final Ticket AYLESBURY_TICKET = new Ticket("Aylesbury",200);
+    public static final Ticket AMERSHAM_TICKET = new Ticket("Amersham",300);
+    public static final Ticket WYCOMBE_TICKET = new Ticket("High Wycombe",330);
+    
+    private Ticket currentTicket;
+    
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
@@ -25,7 +30,7 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        price = cost;
+        price = cost; null 
         balance = 0;
         total = 0;
     }
