@@ -17,17 +17,23 @@ public class Ticket
      */
     public Ticket()
     {
-       this.price = price;
+       this.price = price = 150;
        destination = "Aylesbury";
     }
     
-    public Ticket (string destination, int price)
+    /**
+     * 
+     */
+    public Ticket (String destination, int price)
     { 
        this.price = price;
        this.destination = destination;
     }
     
     
+    /**
+     * 
+     */
     public void setPrice(int price)
     {
       this.price = price;
