@@ -6,10 +6,10 @@
  * sensible amounts of money, and will only print a ticket
  * if enough money has been input.
  * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
+ * @author Levi Ward
+ * @version 2020.11.19
  * 
- * Modified by Student Name
+ * 
  */
 public class TicketMachine
 {
@@ -17,20 +17,20 @@ public class TicketMachine
     public static final Ticket AYLESBURY_TICKET = new Ticket("Aylesbury",200);
     public static final Ticket AMERSHAM_TICKET = new Ticket("Amersham",300);
     public static final Ticket WYCOMBE_TICKET = new Ticket("High Wycombe",330);
-    
+
     private Ticket currentTicket;
-    
+
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
 
     /**
-     * Create a machine that issues tickets of the given price.
+     * 
      */
     public TicketMachine(int cost)
     {
-        price = cost; null 
+        price = cost; 
         balance = 0;
         total = 0;
     }
@@ -65,7 +65,7 @@ public class TicketMachine
         else 
         {
             System.out.println("Use a positive amount rather than: " +
-                               amount);
+                amount);
         }
     }
 
@@ -94,8 +94,8 @@ public class TicketMachine
         else 
         {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
-                    
+                (price - balance) + " more cents.");
+
         }
     }
 
